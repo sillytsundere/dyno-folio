@@ -10,9 +10,7 @@ const headerStyle = {
 
 function Header() {
   return (
-    <div style={headerStyle}>
-      <h1>My Web Paige</h1>
-    </div>
+    <div style={headerStyle}></div>
   );
 }
 
