@@ -5,7 +5,7 @@ const imageStyle = {
 export default function Home() {
   return (
     <div>
-      <h1 className="m-3">My Web Paige</h1>
+      <h1 className="m-2">My Web Paige</h1>
       <div className="d-flex flex-column flex-sm-row">
         <p className="m-3">
           Hello! I'm Paige, an eager and devoted developer looking to gain
