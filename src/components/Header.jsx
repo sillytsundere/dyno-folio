@@ -9,9 +9,7 @@ const headerStyle = {
 };
 
 function Header() {
-  return (
-    <div style={headerStyle}></div>
-  );
+  return <div style={headerStyle}></div>;
 }
 
 export default Header;
