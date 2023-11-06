@@ -1,4 +1,4 @@
-import myPicture from '../assets/me-green-hair.jpeg'
+import myPicture from '../assets/me-green-hair.jpeg';
 
 const imageStyle = {
   width: "25%",

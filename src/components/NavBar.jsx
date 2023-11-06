@@ -8,7 +8,7 @@ function NavListItem({ page, currentPage }) {
           to="/"
           className={currentPage === "/" ? "nav-link active" : "nav-link"}
         >
-          Home
+          About
         </Link>
       </li>
     );
@@ -28,7 +28,7 @@ function NavListItem({ page, currentPage }) {
 }
 
 function NavBar() {
-  const pages = ["/", "about", "portfolio", "contact", "resume"];
+  const pages = ["/", "portfolio", "contact", "resume"];
   const currentPage = useLocation().pathname;
 
   return (
