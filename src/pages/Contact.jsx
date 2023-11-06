@@ -45,7 +45,7 @@ export default function Contact() {
 
   return (
     <div>
-      <h1>Contact Me</h1>
+      <h1 className="m-2">Contact Me</h1>
       <div className="container">
         <div className="row">
           <div>

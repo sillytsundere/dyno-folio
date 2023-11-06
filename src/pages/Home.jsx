@@ -1,3 +1,5 @@
+import myPicture from '../assets/me-green-hair.jpeg'
+
 const imageStyle = {
   width: "25%",
 };
@@ -15,7 +17,7 @@ export default function Home() {
           frameworks, and am always looking to learn new technologies.
         </p>
         <img
-          src="src/assets/me-green-hair.jpeg"
+          src={myPicture}
           className="rounded-circle m-3"
           alt="picture of me"
           style={imageStyle}
