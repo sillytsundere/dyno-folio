@@ -22,7 +22,7 @@ const routes = [
         index: true,
         element: <About />,
       },
-      // {
+      // { will change the index to home after bootcamp
       //   path: "/about",
       //   element: <About />,
       // },

@@ -6,7 +6,7 @@ export default function Resume() {
     <div>
       <h1 className="m-2" style={{color: "#D0F0C0"}}>Resume</h1>
       <div className="d-flex justify-content-center">
-        <div className="card col-10 text-center">
+        <div className="card col-9 text-center">
           <div className="card-body">
             <h5 className="card-title">My Technical Resume</h5>
             <p className="card-text">

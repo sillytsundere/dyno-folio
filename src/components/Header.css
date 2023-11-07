@@ -1,0 +1,25 @@
+.header {
+    width: 100%;
+    background-size: cover;
+    /* background-image: url("../assets/pin-header.jpeg");
+    background-repeat: no-repeat; */
+}
+
+.text {
+    color: #333;
+    background-color: rgba(255, 250, 255, 0.771);
+}
+
+@media (max-width: 425px) {
+    /* For screens 425px and below */
+    .header {
+      height: 100px;
+    }
+  }
+  
+  @media (min-width: 426px) {
+    /* For screens wider than 425px */
+    .header {
+      height: 250px;
+    }
+  }

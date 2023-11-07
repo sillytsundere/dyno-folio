@@ -72,8 +72,8 @@ export default function Contact() {
             {errorMessage}
           </div>
         )}
-        <div className="row">
-          <div>
+        <div className="row d-flex justify-content-center">
+          <div className="col-10">
             <form className="form" onSubmit={handleFormSubmit}>
               <div>
                 <label>Name:</label>
@@ -120,7 +120,8 @@ export default function Contact() {
               </div>
               <div className="text-center m-2">
                 <button
-                  className="btn btn-primary"
+                  className="btn"
+                  style={{backgroundColor: "#319D39"}}
                   type="submit"
                   onClick={handleFormSubmit}
                 >

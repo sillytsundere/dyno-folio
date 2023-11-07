@@ -8,7 +8,7 @@ import weather from "../assets/weather-api.png";
 
 function Project({ image, title, description, githubLink, deployedLink }) {
   return (
-    <div className="col-4">
+    <div className="col-12 col-sm-4">
       <div className="card m-2">
         <img src={image} className="card-img-top" alt="" />
         <div className="card-body">
