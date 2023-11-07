@@ -9,17 +9,17 @@ import weather from "../assets/weather-api.png";
 function Project({ image, title, description, githubLink, deployedLink }) {
   return (
     <div className="col-4">
-      <div class="card m-2">
-        <img src={image} class="card-img-top" alt="" />
-        <div class="card-body">
-          <h5 class="card-title">{title}</h5>
-          <p class="card-text">{description}</p>
+      <div className="card m-2">
+        <img src={image} className="card-img-top" alt="" />
+        <div className="card-body">
+          <h5 className="card-title">{title}</h5>
+          <p className="card-text">{description}</p>
         </div>
-        <div class="card-body">
-          <a href={githubLink} class="card-link">
+        <div className="card-body">
+          <a href={githubLink} className="card-link">
             GitHub Repository
           </a>
-          <a href={deployedLink} class="card-link">
+          <a href={deployedLink} className="card-link">
             Deployed Site
           </a>
         </div>
@@ -94,6 +94,7 @@ export default function Portfolio() {
       <div className="d-flex flex-wrap">
       {projects.map((project) => (
         <Project
+          key={project.title}
           project={project}
           image={project.image}
           title={project.title}

@@ -34,7 +34,7 @@ function NavBar() {
   return (
     <ul className="nav nav-tabs d-flex flex-nowrap justify-content-end">
       {pages.map((page) => (
-        <NavListItem page={page} currentPage={currentPage} />
+        <NavListItem key={page} page={page} currentPage={currentPage} />
       ))}
     </ul>
   );
