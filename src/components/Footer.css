@@ -1,0 +1,9 @@
+/* Footer.css */
+.icon-link {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+.icon-link:hover {
+    transform: translateY(-5px); /* Move up by 5 pixels on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow on hover */
+  }
