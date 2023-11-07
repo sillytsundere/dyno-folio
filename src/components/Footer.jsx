@@ -31,7 +31,7 @@ function Footer() {
           <SiGithub size={32} className="m-2" style={iconStyle.github}/>
         </a>
       </section>
-      <p>© 2023 Made by Paige Carroll</p>
+      <p style={{color: "#32CD32"}}>© 2023 Made by Paige Carroll</p>
     </footer>
   );
 }

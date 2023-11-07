@@ -9,8 +9,8 @@ const styles = {
     backgroundRepeat: "no-repeat",
   },
   text: {
-    color: "black",
-    backgroundColor: "rgba(255, 250, 255, 0.751)",
+    color: "#333",
+    backgroundColor: "rgba(255, 250, 255, 0.771)",
   },
 };
 

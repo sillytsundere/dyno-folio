@@ -64,7 +64,7 @@ export default function Contact() {
 
   return (
     <div>
-      <h1 className="m-2">Contact Me</h1>
+      <h1 className="m-2" style={{color: "#D0F0C0"}}>Contact Me</h1>
       <div className="container">
         {/* Display the error message if there is one */}
         {errorMessage && (

@@ -16,10 +16,10 @@ function Project({ image, title, description, githubLink, deployedLink }) {
           <p className="card-text">{description}</p>
         </div>
         <div className="card-body">
-          <a href={githubLink} className="card-link">
+          <a href={githubLink} className="card-link link">
             GitHub Repository
           </a>
-          <a href={deployedLink} className="card-link">
+          <a href={deployedLink} className="card-link link">
             Deployed Site
           </a>
         </div>
@@ -90,7 +90,7 @@ export default function Portfolio() {
 
   return (
     <div>
-      <h1 className="m-2">Portfolio</h1>
+      <h1 className="m-2" style={{color: "#D0F0C0"}}>Portfolio</h1>
       <div className="d-flex flex-wrap">
       {projects.map((project) => (
         <Project

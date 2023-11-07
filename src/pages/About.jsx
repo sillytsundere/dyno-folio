@@ -2,12 +2,13 @@ import myPicture from "../assets/me-green-hair.jpeg";
 
 const imageStyle = {
   width: "25%",
+  border: "6px solid #319D39" 
 };
 
 export default function About() {
   return (
     <div>
-      <h1 className="m-2">My Web Paige</h1>
+      <h1 className="m-2" style={{color: "#D0F0C0"}}>My Web Paige</h1>
       <div className="d-flex flex-column flex-sm-row">
         <p className="m-3">
           Hello! I'm Paige, an eager and devoted developer looking to gain

@@ -1,6 +1,10 @@
 import { Link, useLocation } from "react-router-dom";
+import './NavBar.css';
 
 function NavListItem({ page, currentPage }) {
+  console.log(currentPage, "navlist item currentPage");
+  console.log(page, "navlistitem page");
+
   if (page === "/") {
     return (
       <li className="nav-item">
@@ -17,7 +21,7 @@ function NavListItem({ page, currentPage }) {
       <li className="nav-item">
         <Link
           to={`${page}`}
-          className={currentPage === page ? "nav-link active" : "nav-link"}
+          className={currentPage === `/${page}` ? "nav-link active" : "nav-link"}
         >
           {page[0].toUpperCase()}
           {page.slice(1)}
@@ -30,6 +34,7 @@ function NavListItem({ page, currentPage }) {
 function NavBar() {
   const pages = ["/", "portfolio", "contact", "resume"];
   const currentPage = useLocation().pathname;
+  console.log(currentPage);
 
   return (
     <ul className="nav nav-tabs d-flex flex-nowrap justify-content-end">
