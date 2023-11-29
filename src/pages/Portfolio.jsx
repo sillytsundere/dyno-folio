@@ -5,6 +5,7 @@ import techTalk from "../assets/comp-sci-blog.png";
 import ajaxFolio from "../assets/ajax-folio.png";
 import jsQuiz from "../assets/js-quiz.png";
 import weather from "../assets/weather-api.png";
+import collectConnect from "../assets/collect-connect.jpeg";
 
 function Project({ image, title, description, githubLink, deployedLink }) {
   return (
@@ -37,6 +38,14 @@ export default function Portfolio() {
         "This web application allows users to search for book titles sourced from the Google Books API and save them to a list that is saved in local storage.",
       githubLink: "https://github.com/sillytsundere/bookquesters",
       deployedLink: "https://sillytsundere.github.io/bookquesters/",
+    },
+    {
+      image: collectConnect,
+      title: "CollectConnect",
+      description:
+        "Collector’s connect is a website where collectors can share their various collections and view collections shared by other users.",
+      githubLink: "https://github.com/DanielTBonn/collectors-connect",
+      deployedLink: "https://boiling-anchorage-11027-d19406c04dfb.herokuapp.com/",
     },
     // {
     //   image: hangman,
