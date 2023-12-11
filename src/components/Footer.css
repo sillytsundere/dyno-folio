@@ -5,10 +5,5 @@
   
 .icon-link:hover {
     transform: translateY(-10px); /* Move up by 10 pixels on hover */
-    box-shadow: 0 10px 8px rgba(0, 0, 0, 1); /* Add a subtle box shadow on hover */
+    box-shadow: 5px 10px 8px rgba(0, 0, 0, 1); /* Add a subtle box shadow on hover */
   }
-
-.instagram {
-  color: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
-  /* color: transparent; */
-}
