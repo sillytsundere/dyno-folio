@@ -5,5 +5,5 @@
   
 .icon-link:hover {
     transform: translateY(-10px); /* Move up by 10 pixels on hover */
-    box-shadow: 5px 10px 8px rgba(0, 0, 0, 1); /* Add a subtle box shadow on hover */
+    box-shadow: 7px 10px 8px rgba(0, 0, 0, 0.7); /* Add a subtle box shadow on hover */
   }

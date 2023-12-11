@@ -2,13 +2,15 @@ import myPicture from "../assets/me-green-hair.jpeg";
 
 const imageStyle = {
   width: "300px",
-  border: "6px solid #319D39" 
+  border: "6px solid #319D39",
 };
 
 export default function About() {
   return (
     <div>
-      <h1 className="m-2" style={{color: "#D0F0C0"}}>My Web Paige</h1>
+      <h1 className="m-2" style={{ color: "#D0F0C0" }}>
+        My Web Paige
+      </h1>
       <div className="d-flex flex-column flex-sm-row align-items-center">
         <img
           src={myPicture}
@@ -17,11 +19,15 @@ export default function About() {
           style={imageStyle}
         />
         <p className="m-3">
-          Hello! I'm Paige, an eager and devoted developer looking to gain
-          experience and knowledge in the world of web development. I am
-          finishing up a coding bootcamp where I learned and explored the full
-          MERN stack. I am most comfortable working with JavaScript and its
-          frameworks, and am always looking to learn new technologies.
+          Hello! I'm Paige, an eager and devoted developer who is having fun
+          exploring the MERN stack. Having recently graduated from a Full Stack
+          Web Development bootcamp I am ready to bounce off of that springboard
+          into even more knowledge and exciting experiences. I am most
+          comfortable working with JavaScript and its frameworks, and I'm
+          currently taking continuing education courses for Python, AWS, C# and
+          Java. When I am not fighting bugs(that I created) in the terminal, I
+          enjoy making art, reading books and manga, and eating delicious food
+          with good friends!
         </p>
       </div>
     </div>

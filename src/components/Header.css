@@ -1,13 +1,29 @@
 .header {
     width: 100%;
     background-size: cover;
-    /* background-image: url("../assets/pin-header.jpeg");
-    background-repeat: no-repeat; */
+    overflow: hidden;
+    background-image: url("../assets/the-mess.jpeg");
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .text {
-    color: #333;
-    background-color: rgba(255, 250, 255, 0.771);
+    color: white;
+    background-color: rgba(51, 51, 51, 0.755);
+    margin-left: 50px;
+    padding-left: 50px;
+    margin-right: -100px;
+    padding-right: 600px;
+    border-radius: 25px 0 0 25px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: chalkduster, fantasy;
+    font-size: 72px;
+
 }
 
 @media (max-width: 425px) {
