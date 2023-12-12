@@ -50,10 +50,10 @@ function Footer() {
         <a href="https://www.instagram.com/sillytsundere/" className="m-2 icon-link" style={iconStyle.instagram}>
         <svg height={iconSize} width={iconSize}>
           <defs>
-            <linearGradient id="myGradient" gradientTransform="rotate(70)">
-              <stop offset="0%" stopColor="#f9ce34" />
-              <stop offset="75%" stopColor="#ee2a7b" />
-              <stop offset="100%" stopColor="#6228d7" />
+            <linearGradient id="myGradient" gradientTransform="rotate(102)">
+              <stop offset="0%" stopColor="#6228d7" />
+              <stop offset="35%" stopColor="#ee2a7b" />
+              <stop offset="100%" stopColor="#f9ce34" />
             </linearGradient>
           </defs>
           <IconContext.Provider value={{ attr: {fill: "url('#myGradient')"}}}>

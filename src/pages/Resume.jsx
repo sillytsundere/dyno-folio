@@ -10,7 +10,7 @@ export default function Resume() {
           <div className="card-body">
             <h5 className="card-title">My Technical Resume</h5>
             <p className="card-text">
-              Skills Include: HTML, CSS, JavaScript, Node, Express, Git, MySQL, MongoDB, React and more!
+              Skills Include: HTML, CSS, JavaScript, React, Node, Express, Git, MySQL, MongoDB, Apollo, GraphQL and more!
             </p>
             <a
               href="https://docs.google.com/document/d/10jcyc6s6PcLadUw4XbPQO2zV3YXp79jzITxEisokdeU/edit?usp=sharing"
