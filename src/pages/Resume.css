@@ -19,7 +19,7 @@
     font-style: italic;
     font-weight: bold;
     font-family: chalkduster, fantasy;
-    font-size: 60px;
+    font-size: 4em;
     margin: 20px
 }
 
@@ -32,6 +32,9 @@
     .one {
         flex-direction: column;
     }
+    .resume-title {
+        font-size: 1em;
+    }
 }
 
 @media (max-width: 800px) {
@@ -42,5 +45,8 @@
     }
     .card {
         margin: 0 25px 0 25px;
+    }
+    .resume-title {
+        font-size: 3em;
     }
 }
