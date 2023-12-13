@@ -5,3 +5,42 @@
 .link:hover {
     color: #D0F0C0
 }
+
+.one {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+}
+
+.resume-title {
+    color: #D0F0C0;
+    font-style: italic;
+    font-weight: bold;
+    font-family: chalkduster, fantasy;
+    font-size: 60px;
+    margin: 20px
+}
+
+.card {
+    margin: 25px;
+}
+
+@media (max-width: 600px) {
+    /* For screens 425px and below */
+    .one {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 800px) {
+    /* For screens wider than 425px */
+    .one {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .card {
+        margin: 0 25px 0 25px;
+    }
+}
