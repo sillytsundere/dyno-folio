@@ -22,7 +22,7 @@ function NavListItem({ page, currentPage, closeDrawer }) {
     return (
       <li className="nav-item">
         <Link
-          to={`${page}`}
+          to={`/${page}`}
           className={currentPage === `/${page}` ? "nav-link active" : "nav-link"}
           onClick={() => {
             closeDrawer();
