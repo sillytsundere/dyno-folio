@@ -1,0 +1,17 @@
+.nav-link {
+    color: #32CD32 !important
+}
+
+.nav-link.active {
+    color: #D0F0C0 !important
+}
+
+.list {
+    list-style: none;
+}
+
+.nav-item {
+    background-color: rgba(51, 51, 51, 0.755);
+    margin-bottom: 15px;
+    border-radius: 20px 0 0 20px;
+}
