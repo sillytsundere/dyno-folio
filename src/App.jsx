@@ -27,7 +27,7 @@ function App() {
 
   return (
     <>
-      <main>
+      <main className="main">
         <Button onClick={toggleDrawer} variant="outline-light" style={{margin: "5px"}}><SlMenu style={{margin: "5px", padding: "0"}}/></Button>
         <Drawer
                 open={isOpen}
@@ -42,7 +42,7 @@ function App() {
                 </p>
                 {/* Pass closeDrawer function as a prop to NavBar */}
                 <NavBarVert closeDrawer={closeDrawer} />
-            </Drawer>
+        </Drawer>
         <Outlet />
       </main>
       <Footer className="footer" />
