@@ -24,7 +24,7 @@ body {
 }
 
 .drawer {
-  background-image: url("src/assets/the-mess.jpeg") !important;
+  background-image: url("./assets/the-mess.jpeg") !important;
   background-size: cover !important;
   background-position: 15% center !important;
   background-color: green;
