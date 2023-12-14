@@ -43,5 +43,19 @@ body {
   position: absolute;
   left: 0; right: 0; bottom: 0;
   width: 100%;
+}
 
+
+@media (max-width: 800px) {
+  /* For screens 800px and below */
+  .drawer-text {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 600px) {
+  /* For screens 600px and below */
+  .drawer-text {
+    font-size: 2em;
+  }
 }

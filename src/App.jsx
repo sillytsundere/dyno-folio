@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 // import drawer component
 import Drawer from 'react-modern-drawer'
 // import styles
@@ -25,6 +25,33 @@ function App() {
     setIsOpen(false);
   };
 
+  const [drawerSize, setDrawerSize] = useState(375);
+
+  useEffect(() => {
+    const updateDrawerSize = () => {
+      const viewportWidth = window.innerWidth;
+
+      if (viewportWidth <= 600) {
+        setDrawerSize(250);
+      } else if (viewportWidth <= 800) {
+        setDrawerSize(305)
+      } else {
+        setDrawerSize(375)
+      }
+    };
+
+    // Initial update
+    updateDrawerSize();
+
+    // Update on window resize
+    window.addEventListener("resize", updateDrawerSize);
+
+    // Clean up the event listener on component unmount
+  return () => {
+    window.removeEventListener("resize", updateDrawerSize);
+  };
+  }, []);
+
   return (
     <>
       <main className="main">
@@ -35,7 +62,7 @@ function App() {
                 direction='right'
                 className='drawer'
                 overlayOpacity={0.5}
-                size={375}
+                size={drawerSize}
         >
                 <p className="drawer-text">
                   PAIGE

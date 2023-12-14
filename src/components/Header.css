@@ -33,7 +33,7 @@
     }
   }
   
-  @media (min-width: 426px) {
+@media (min-width: 426px) {
     /* For screens wider than 425px */
     .header {
       height: 250px;
