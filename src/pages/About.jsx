@@ -19,7 +19,7 @@ export default function About() {
           style={imageStyle}
         />
         <p className="m-3" style={{fontFamily: "cambria", fontSize: "23px"}}>
-          Hello! I'm Paige, an eager and devoted developer who is having fun
+          Hello! I'm Paige, an eager and devoted junior developer who is having fun
           exploring the MERN stack. Having recently graduated from a Full Stack
           Web Development bootcamp I am ready to bounce off of that springboard
           into even more knowledge and exciting experiences. I am most
