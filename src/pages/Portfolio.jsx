@@ -37,15 +37,6 @@ function Project({ image, alt, title, description, tech, githubLink, deployedLin
 export default function Portfolio() {
   const projects = [
     {
-      image: bookquesters,
-      alt: "website homepage with intro and buttons to explore site",
-      title: "Bookquesters",
-      description: "Bookquesters is an application where users can search for book titles and save searched titles to a personalized list.",
-      tech: "HTML, CSS, JavaScript, Bootstrap, TailwindCSS, Google Books API, Open Library API",
-      githubLink: "https://github.com/sillytsundere/bookquesters",
-      deployedLink: "https://sillytsundere.github.io/bookquesters/",
-    },
-    {
       image: collectConnect,
       alt: "homepage of site when logged in displaying feed of collections",
       title: "CollectConnect",
@@ -83,6 +74,15 @@ export default function Portfolio() {
       tech: "HandlebarsJS, Bootstrap, CSS, JavaScript, NodeJS, ExpressJS, MySQL, Sequelize, Heroku",
       githubLink: "https://github.com/sillytsundere/comp-sci-blog",
       deployedLink: "https://comp-tech-talk-1c5888367981.herokuapp.com/",
+    },
+    {
+      image: bookquesters,
+      alt: "website homepage with intro and buttons to explore site",
+      title: "Bookquesters",
+      description: "Bookquesters is an application where users can search for book titles and save searched titles to a personalized list.",
+      tech: "HTML, CSS, JavaScript, Bootstrap, TailwindCSS, Google Books API, Open Library API",
+      githubLink: "https://github.com/sillytsundere/bookquesters",
+      deployedLink: "https://sillytsundere.github.io/bookquesters/",
     },
     {
       image: jsQuiz,
