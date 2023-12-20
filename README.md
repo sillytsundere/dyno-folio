@@ -20,6 +20,8 @@ Favicon Apple Icon sourced from https://icons8.com/icon/LPo-oYep4SZR/green-apple
 
 Logo icons sourced from https://react-icons.github.io/react-icons/ 
 
+Much help from https://formspree.io/blog/react-forms-2/ on my contact form
+
 ## License
 MIT License
 
