@@ -7,7 +7,7 @@ export default function About() {
       <h1 className="m-2 about-title">
         A Web Paige
       </h1>
-      <div className="d-flex flex-column flex-sm-row align-items-center">
+      <div className="d-flex flex-column flex-md-row align-items-center">
         <img
           src={myPicture}
           className="rounded-circle m-3 center image"
