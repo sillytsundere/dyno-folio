@@ -1,0 +1,33 @@
+.about-title {
+    color: #D0F0C0;
+    font-family: chalkduster, fantasy;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 4em;
+}
+
+.image {
+    width: 300px;
+    border: 6px solid #319D39;
+}
+
+.about-text {
+    font-family: cambria; 
+    font-size: 23px;
+}
+
+
+@media (max-width: 800px) {
+    .about-title {
+        font-size: 3em;
+    }
+    .about-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-title {
+        font-size: 2em;
+    }
+}

@@ -11,7 +11,20 @@
 }
 
 .nav-item {
-    background-color: rgba(51, 51, 51, 0.755);
+    background-color: rgba(51, 51, 51, 0.795);
     margin-bottom: 15px;
     border-radius: 20px 0 0 20px;
+    font-size: 22px;
+}
+
+@media (max-width: 800px) {
+    .nav-item {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-item {
+        font-size: 15px;
+    }
 }

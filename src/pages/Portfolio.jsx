@@ -25,7 +25,19 @@ function Project({ image, alt, title, description, tech, githubLink, deployedLin
           <h5 className="card-title">{title}</h5>
           <p className="card-text">{description}</p>
           <p className="card-text">{tech}</p>
-          <a href={githubLink} className="btn btn-primary">
+          <a 
+            href={githubLink} 
+            className="btn btn-primary"
+            style={{backgroundColor: "#319D39", borderColor: "#319D39", transition: "background-color 0.3s, border-color 0.3s"}} 
+            onMouseOver={(e) => {
+            e.target.style.backgroundColor = "#287e2e"; // Change to the desired darker color
+            e.target.style.borderColor = "#287e2e";
+            }}
+            onMouseOut={(e) => {
+            e.target.style.backgroundColor = "#319D39"; // Restore the original color
+            e.target.style.borderColor = "#319D39";
+            }}
+          >
             GitHub Repository
           </a>
         </div>
@@ -118,7 +130,7 @@ export default function Portfolio() {
 
   return (
     <div>
-      <h1 className="m-2" style={{color: "#D0F0C0"}}>Portfolio</h1>
+      <h1 className="m-2" style={{ color: "#D0F0C0", fontFamily: "chalkduster, fantasy", fontStyle: "italic", fontWeight: "bold", }}>Portfolio</h1>
       <div className="d-flex flex-wrap">
       {projects.map((project) => (
         <Project

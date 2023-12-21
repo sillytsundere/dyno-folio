@@ -1,24 +1,19 @@
 import myPicture from "../assets/me-green-hair.jpeg";
-
-const imageStyle = {
-  width: "300px",
-  border: "6px solid #319D39",
-};
+import './About.css';
 
 export default function About() {
   return (
     <div>
-      <h1 className="m-2" style={{ color: "#D0F0C0", fontFamily: "chalkduster, fantasy", fontStyle: "italic", fontWeight: "bold", }}>
+      <h1 className="m-2 about-title">
         A Web Paige
       </h1>
       <div className="d-flex flex-column flex-sm-row align-items-center">
         <img
           src={myPicture}
-          className="rounded-circle m-3 center"
+          className="rounded-circle m-3 center image"
           alt="picture of me"
-          style={imageStyle}
         />
-        <p className="m-3" style={{fontFamily: "cambria", fontSize: "23px"}}>
+        <p className="m-3 about-text">
           Hello! I'm Paige, an eager and devoted junior developer who is having fun
           exploring the MERN stack. Having recently graduated from a Full Stack
           Web Development bootcamp I am ready to bounce off of that springboard
