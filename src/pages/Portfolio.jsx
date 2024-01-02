@@ -1,6 +1,6 @@
 import bookquesters from "../assets/bookquesters.png";
 import cosfolio from "../assets/cosfolio.png";
-// import hangman from "../assets/hangman.png";
+import hangman from "../assets/mid-game-shot.png";
 import techTalk from "../assets/comp-sci-blog.png";
 import ajaxFolio from "../assets/ajax-folio.png";
 import jsQuiz from "../assets/js-quiz.png";
@@ -57,16 +57,16 @@ export default function Portfolio() {
       githubLink: "https://github.com/DanielTBonn/collectors-connect",
       deployedLink: "https://boiling-anchorage-11027-d19406c04dfb.herokuapp.com/",
     },
-    // {
-    //   image: hangman,
-    //   alt: "",
-    //   title: "Eva - Hangman",
-    //   description:
-    //     "A hangman game made using vanilla JavaScript and HTML styled with BootstrapCSS. Themed after a 90's anime.",
-    //   tech: "",
-    //   githubLink: "https://github.com/sillytsundere/hangman-game",
-    //   deployedLink: "N/A",
-    // },
+    {
+      image: hangman,
+      alt: "Screenshot of game being played, with timer, life count and semi-completed word, hint button is visible",
+      title: "Eva - Hangman",
+      description:
+        "A hangman game made using vanilla JavaScript and HTML styled with BootstrapCSS. Themed after a 90's anime.",
+      tech: "HTML, CSS, JavaScript, Bootstrap",
+      githubLink: "https://github.com/sillytsundere/hangman-game",
+      deployedLink: "https://sillytsundere.github.io/hangman-game/",
+    },
     {
       image: cosfolio,
       alt: "Logged in view of homepage with feed of user's cosplay creations",
