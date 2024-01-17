@@ -10,7 +10,7 @@ If you so choose to install this application and play with the code, first downl
 
 ## Usage
 
-The application can be reached at the deployed site [here](https://webpaige.netlify.app/). You can navigate to all the pages via the links in the navbar and learn about me as a developer and person throughout the application.
+The application can be reached at the deployed site [here](https://www.bestwebpaige.com/). You can navigate to all the pages via the links in the navbar and learn about me as a developer and person throughout the application.
 
 ![homepage with image of developer and blurb about them with drawer navbar extended](./src/assets/localhost_5173_.png)
 
