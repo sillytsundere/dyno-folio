@@ -7,35 +7,51 @@ import jsQuiz from "../assets/js-quiz.png";
 import weather from "../assets/weather-api.png";
 import collectConnect from "../assets/collect-connect.jpeg";
 
-function Project({ image, alt, title, description, tech, githubLink, deployedLink }) {
+function Project({
+  image,
+  alt,
+  title,
+  description,
+  tech,
+  githubLink,
+  deployedLink,
+}) {
   return (
     <div className="col-12 col-md-6 col-lg-4 my-2">
       <div className="card m-2 h-100 d-flex flex-column">
         <a href={deployedLink}>
-          <img src={image} 
-            className="card-img-top" 
+          <img
+            src={image}
+            className="card-img-top"
             style={{
-              height: "300px", 
+              height: "300px",
               width: "100%",
               overflow: "hidden",
-              objectFit: "cover", 
-              objectPosition: "top left"}} alt={alt} />
+              objectFit: "cover",
+              objectPosition: "top left",
+            }}
+            alt={alt}
+          />
         </a>
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
           <p className="card-text">{description}</p>
           <p className="card-text">{tech}</p>
-          <a 
-            href={githubLink} 
+          <a
+            href={githubLink}
             className="btn btn-primary"
-            style={{backgroundColor: "#319D39", borderColor: "#319D39", transition: "background-color 0.3s, border-color 0.3s"}} 
+            style={{
+              backgroundColor: "#319D39",
+              borderColor: "#319D39",
+              transition: "background-color 0.3s, border-color 0.3s",
+            }}
             onMouseOver={(e) => {
-            e.target.style.backgroundColor = "#287e2e"; // Change to the desired darker color
-            e.target.style.borderColor = "#287e2e";
+              e.target.style.backgroundColor = "#287e2e"; // Change to the desired darker color
+              e.target.style.borderColor = "#287e2e";
             }}
             onMouseOut={(e) => {
-            e.target.style.backgroundColor = "#319D39"; // Restore the original color
-            e.target.style.borderColor = "#319D39";
+              e.target.style.backgroundColor = "#319D39"; // Restore the original color
+              e.target.style.borderColor = "#319D39";
             }}
           >
             GitHub Repository
@@ -52,20 +68,12 @@ export default function Portfolio() {
       image: collectConnect,
       alt: "homepage of site when logged in displaying feed of collections",
       title: "CollectConnect",
-      description: "Collector’s connect is a website where collectors can share their various collections and view collections shared by other users.",
+      description:
+        "Collector’s connect is a website where collectors can share their various collections and view collections shared by other users.",
       tech: "React, JavaScript, Bootstrap, NodeJS, ExpressJS, MongoDB, Apollo with GraphQL, AWS S3, Heroku",
       githubLink: "https://github.com/DanielTBonn/collectors-connect",
-      deployedLink: "https://boiling-anchorage-11027-d19406c04dfb.herokuapp.com/",
-    },
-    {
-      image: hangman,
-      alt: "Screenshot of game being played, with timer, life count and semi-completed word, hint button is visible",
-      title: "Eva - Hangman",
-      description:
-        "A hangman game made using vanilla JavaScript and HTML styled with BootstrapCSS. Themed after a 90's anime.",
-      tech: "HTML, CSS, JavaScript, Bootstrap",
-      githubLink: "https://github.com/sillytsundere/hangman-game",
-      deployedLink: "https://sillytsundere.github.io/hangman-game/",
+      deployedLink:
+        "https://boiling-anchorage-11027-d19406c04dfb.herokuapp.com/",
     },
     {
       image: cosfolio,
@@ -91,30 +99,41 @@ export default function Portfolio() {
       image: bookquesters,
       alt: "website homepage with intro and buttons to explore site",
       title: "Bookquesters",
-      description: "Bookquesters is an application where users can search for book titles and save searched titles to a personalized list.",
+      description:
+        "Bookquesters is an application where users can search for book titles and save searched titles to a personalized list.",
       tech: "HTML, CSS, JavaScript, Bootstrap, TailwindCSS, Google Books API, Open Library API",
       githubLink: "https://github.com/sillytsundere/bookquesters",
       deployedLink: "https://sillytsundere.github.io/bookquesters/",
-    },
-    {
-      image: jsQuiz,
-      alt: "Homepage displaying description of quiz, and buttons to start quiz and view high scores",
-      title: "JavaScript Quiz",
-      description:
-      "This web application is a short, timed quiz to test vanilla JavaScript knowledge.",
-      tech: "HTML, Bootstrap, JavaScript",
-      githubLink: "https://github.com/sillytsundere/javascript-quiz",
-      deployedLink: "https://sillytsundere.github.io/javascript-quiz/",
     },
     {
       image: weather,
       alt: "",
       title: "Weather API",
       description:
-      "This weather application displays the current forcast for a desired city as well as the future forcast over a 5 day period.",
+        "This weather application displays the current forcast for a desired city as well as the future forcast over a 5 day period.",
       tech: "HTML, Bootstrap, JavaScript, jQuery, Open Weather API",
       githubLink: "https://github.com/sillytsundere/my-weather-spot",
       deployedLink: "https://sillytsundere.github.io/my-weather-spot/",
+    },
+    {
+      image: jsQuiz,
+      alt: "Homepage displaying description of quiz, and buttons to start quiz and view high scores",
+      title: "JavaScript Quiz",
+      description:
+        "This web application is a short, timed quiz to test vanilla JavaScript knowledge.",
+      tech: "HTML, Bootstrap, JavaScript",
+      githubLink: "https://github.com/sillytsundere/javascript-quiz",
+      deployedLink: "https://sillytsundere.github.io/javascript-quiz/",
+    },
+    {
+      image: hangman,
+      alt: "Screenshot of game being played, with timer, life count and semi-completed word, hint button is visible",
+      title: "Eva - Hangman",
+      description:
+        "A hangman game made using vanilla JavaScript and HTML styled with BootstrapCSS. Themed after a 90's anime.",
+      tech: "HTML, CSS, JavaScript, Bootstrap",
+      githubLink: "https://github.com/sillytsundere/hangman-game",
+      deployedLink: "https://sillytsundere.github.io/hangman-game/",
     },
     {
       image: ajaxFolio,
@@ -130,21 +149,31 @@ export default function Portfolio() {
 
   return (
     <div>
-      <h1 className="m-2" style={{ color: "#D0F0C0", fontFamily: "chalkduster, fantasy", fontStyle: "italic", fontWeight: "bold", }}>Portfolio</h1>
+      <h1
+        className="m-2"
+        style={{
+          color: "#D0F0C0",
+          fontFamily: "chalkduster, fantasy",
+          fontStyle: "italic",
+          fontWeight: "bold",
+        }}
+      >
+        Portfolio
+      </h1>
       <div className="d-flex flex-wrap">
-      {projects.map((project) => (
-        <Project
-          key={project.title}
-          project={project}
-          image={project.image}
-          alt={project.alt}
-          title={project.title}
-          description={project.description}
-          tech={project.tech}
-          githubLink={project.githubLink}
-          deployedLink={project.deployedLink}
-        />
-      ))}
+        {projects.map((project) => (
+          <Project
+            key={project.title}
+            project={project}
+            image={project.image}
+            alt={project.alt}
+            title={project.title}
+            description={project.description}
+            tech={project.tech}
+            githubLink={project.githubLink}
+            deployedLink={project.deployedLink}
+          />
+        ))}
       </div>
     </div>
   );
