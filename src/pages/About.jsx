@@ -20,8 +20,7 @@ export default function About() {
           into even more knowledge and exciting experiences. I am most
           comfortable working with JavaScript and its frameworks, and I'm
           currently taking continuing education courses for Python, AWS, C# and
-          Java. When I am not fighting bugs(that I created) in the terminal, I
-          enjoy making art, reading books and manga, and eating delicious food
+          Java. When I am not spending my time in the terminal, I enjoy making art, reading books and manga, and eating delicious food
           with good friends!
         </p>
       </div>
