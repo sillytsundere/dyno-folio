@@ -8,19 +8,37 @@
 
 .one {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 300px;
 }
 
 .resume-title {
   color: #d0f0c0;
-  font-style: italic;
-  font-weight: bold;
-  font-family: chalkduster, fantasy;
+  /* font-style: italic;
+  font-weight: bold; */
   font-size: 4em;
   margin: 20px;
+}
+
+.shadows-into-light-regular {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rock-3d-regular {
+  font-family: "Rock 3D", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quicksand-font {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
 }
 
 .card {

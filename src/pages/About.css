@@ -1,33 +1,48 @@
 .about-title {
-    color: #D0F0C0;
-    font-family: chalkduster, fantasy;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 4em;
+  color: #d0f0c0;
+  font-size: 4em;
+  margin: 20px;
 }
 
 .image {
-    width: 300px;
-    border: 6px solid #319D39;
+  width: 300px;
+  border: 6px solid #319d39;
 }
 
 .about-text {
-    font-family: cambria; 
-    font-size: 23px;
+  font-size: 23px;
 }
 
+.shadows-into-light-regular {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rock-3d-regular {
+  font-family: "Rock 3D", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quicksand-font {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+}
 
 @media (max-width: 800px) {
-    .about-title {
-        font-size: 3em;
-    }
-    .about-text {
-        font-size: 18px;
-    }
+  .about-title {
+    font-size: 3em;
+  }
+  .about-text {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 600px) {
-    .about-title {
-        font-size: 2em;
-    }
+  .about-title {
+    font-size: 2em;
+  }
 }

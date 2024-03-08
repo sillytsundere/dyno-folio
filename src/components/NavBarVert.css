@@ -17,6 +17,13 @@
     font-size: 22px;
 }
 
+.quicksand-font {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+}
+
 @media (max-width: 800px) {
     .nav-item {
         font-size: 17px;

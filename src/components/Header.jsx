@@ -3,7 +3,7 @@ import './Header.css'
 function Header() {
   return (
     <div className="header">
-          <p className="text">
+          <p className="">
             PAIGE
           </p>
     </div>

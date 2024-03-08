@@ -64,10 +64,11 @@ function App() {
                 overlayOpacity={0.5}
                 size={drawerSize}
         >
-                <p className="drawer-text">
-                  PAIGE
+                <p className="drawer-text shadows-into-light-regular">
+                  Paige
                 </p>
                 {/* Pass closeDrawer function as a prop to NavBar */}
+                <Header />
                 <NavBarVert closeDrawer={closeDrawer} />
         </Drawer>
         <Outlet />

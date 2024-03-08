@@ -42,7 +42,7 @@ function NavBar() {
   const currentPage = useLocation().pathname;
 
   return (
-    <ul className="list">
+    <ul className="list quicksand-font">
       {pages.map((page) => (
         <NavListItem key={page} page={page} currentPage={currentPage} />
       ))}

@@ -4,8 +4,9 @@ import hangman from "../assets/mid-game-shot.png";
 import techTalk from "../assets/comp-sci-blog.png";
 import ajaxFolio from "../assets/ajax-folio.png";
 import jsQuiz from "../assets/js-quiz.png";
-import weather from "../assets/weather-api.png";
+import weather from "../assets/stellar-weather.png";
 import collectConnect from "../assets/collect-connect.jpeg";
+import './Portfolio.css';
 
 function Project({
   image,
@@ -19,17 +20,10 @@ function Project({
   return (
     <div className="col-12 col-md-6 col-lg-4 my-2">
       <div className="card m-2 h-100 d-flex flex-column">
-        <a href={deployedLink}>
+        <a href={deployedLink} target="_blank">
           <img
             src={image}
-            className="card-img-top"
-            style={{
-              height: "300px",
-              width: "100%",
-              overflow: "hidden",
-              objectFit: "cover",
-              objectPosition: "top left",
-            }}
+            className="images card-img-top"
             alt={alt}
           />
         </a>
@@ -108,7 +102,7 @@ export default function Portfolio() {
     {
       image: weather,
       alt: "",
-      title: "Weather API",
+      title: "Stellar Weather",
       description:
         "This weather application displays the current forcast for a desired city as well as the future forcast over a 5 day period.",
       tech: "HTML, Bootstrap, JavaScript, jQuery, Open Weather API",
@@ -148,19 +142,11 @@ export default function Portfolio() {
   ];
 
   return (
-    <div>
-      <h1
-        className="m-2"
-        style={{
-          color: "#D0F0C0",
-          fontFamily: "chalkduster, fantasy",
-          fontStyle: "italic",
-          fontWeight: "bold",
-        }}
-      >
+    <div className="m-2">
+      <h1 className="shadows-into-light-regular portfolio-title">
         Portfolio
       </h1>
-      <div className="d-flex flex-wrap">
+      <div className="d-flex flex-wrap quicksand-font">
         {projects.map((project) => (
           <Project
             key={project.title}

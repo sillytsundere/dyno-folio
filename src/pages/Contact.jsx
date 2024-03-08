@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import validateEmail from "../utils/helper.js";
 import axios from "axios";
+import './Contact.css'
 
 //import for formspree email
 import { useForm, ValidationError } from "@formspree/react";
@@ -92,17 +93,11 @@ export default function Contact() {
   return (
     <div>
       <h1
-        className="m-2 text-center"
-        style={{
-          color: "#D0F0C0",
-          fontStyle: "italic",
-          fontWeight: "bold",
-          fontFamily: "chalkduster, fantasy",
-        }}
+        className="m-2 text-center shadows-into-light-regular contact-title"
       >
         Contact Me
       </h1>
-      <div className="row d-flex justify-content-center">
+      <div className="row d-flex justify-content-center quicksand-font">
         <div className="col-12 col-sm-10 col-lg-8">
         <form className="form" onSubmit={handleOnSubmit} noValidate>
           <label htmlFor="name">Name:</label>

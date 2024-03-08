@@ -2,28 +2,21 @@
     font-family: "Shadows Into Light", cursive;
     font-weight: 400;
     font-style: normal;
-}
+  }
 
-.portfolio-title {
-    color: #D0F0C0;
+.contact-title {
+    color: #d0f0c0;
     /* font-style: italic;
     font-weight: bold; */
     font-size: 4em;
     margin: 20px;
 }
 
-.images {
-    height: 300px;
-    width: 100%;
-    overflow: hidden;
-    object-fit: cover;
-    object-position: top left;
+.rock-3d-regular {
+  font-family: "Rock 3D", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
-
-/* 
-<uniquifier>: Use a unique and descriptive class name
-<weight>: Use a value from 300 to 700 
-*/
 
 .quicksand-font {
   font-family: "Quicksand", sans-serif;
