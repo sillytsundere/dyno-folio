@@ -12,15 +12,13 @@ export default function About() {
           alt="picture of me"
         />
         <p className="m-3 quicksand-font about-text">
-          Hello! I'm Paige, an eager and devoted junior developer who is having
-          fun exploring the MERN stack. Having recently graduated from a Full
-          Stack Web Development bootcamp I am ready to bounce off of that
-          springboard into even more knowledge and exciting experiences. I am
-          most comfortable working with JavaScript and its frameworks, and I'm
-          currently taking continuing education courses for Python, AWS, C# and
-          Java. When I am not spending my time in the terminal, I enjoy making
-          art, reading books and manga, and eating delicious food with good
-          friends!
+        Howdy! I'm Paige—a passionate web developer driven by insatiable curiosity and a love for the exhilarating world of software development. My recently acquired Full Stack Web Development certificate serves as a cornerstone, propelling me into the next phase of my educational journey. 
+        <br></br>
+        <br></br>
+        I am most comfortable working with JavaScript and its frameworks, and now I'm broadening my skills through courses in Python, AWS, C#, and Java. 
+        <br></br>
+        <br></br>
+        Away from the terminal, you’ll catch me creating art, exploring local hiking trails, devouring books and manga, and savoring delicious meals with good friends.
         </p>
       </div>
     </div>
