@@ -1,8 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
-import './NavBarVert.css';
+import "./NavBarVert.css";
 
 function NavListItem({ page, currentPage, closeDrawer }) {
-
   if (page === "/") {
     return (
       <li className="nav-item">
@@ -11,8 +10,8 @@ function NavListItem({ page, currentPage, closeDrawer }) {
           className={currentPage === "/" ? "nav-link active" : "nav-link"}
           onClick={() => {
             closeDrawer();
-            console.log('Link clicked');
-        }}
+            console.log("Link clicked");
+          }}
         >
           About
         </Link>
@@ -23,11 +22,13 @@ function NavListItem({ page, currentPage, closeDrawer }) {
       <li className="nav-item">
         <Link
           to={`/${page}`}
-          className={currentPage === `/${page}` ? "nav-link active" : "nav-link"}
+          className={
+            currentPage === `/${page}` ? "nav-link active" : "nav-link"
+          }
           onClick={() => {
             closeDrawer();
-            console.log('Link clicked');
-        }}
+            console.log("Link clicked");
+          }}
         >
           {page[0].toUpperCase()}
           {page.slice(1)}
@@ -42,11 +43,14 @@ function NavBar() {
   const currentPage = useLocation().pathname;
 
   return (
-    <ul className="list quicksand-font">
-      {pages.map((page) => (
-        <NavListItem key={page} page={page} currentPage={currentPage} />
-      ))}
-    </ul>
+    <nav>
+      <header className="shadows-into-light-regular drawer-header">Paige</header>
+      <ul className="list quicksand-font">
+        {pages.map((page) => (
+          <NavListItem key={page} page={page} currentPage={currentPage} />
+        ))}
+      </ul>
+    </nav>
   );
 }
 

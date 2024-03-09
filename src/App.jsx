@@ -9,7 +9,6 @@ import { SlMenu } from "react-icons/sl";
 import { Button } from 'react-bootstrap'
 
 import { Outlet } from "react-router-dom";
-import Header from "./components/Header.jsx";
 import NavBar from "./components/NavBar.jsx";
 import NavBarVert from "./components/NavBarVert.jsx";
 import Footer from "./components/Footer.jsx";
@@ -64,11 +63,7 @@ function App() {
                 overlayOpacity={0.5}
                 size={drawerSize}
         >
-                <p className="drawer-text shadows-into-light-regular">
-                  Paige
-                </p>
                 {/* Pass closeDrawer function as a prop to NavBar */}
-                <Header />
                 <NavBarVert closeDrawer={closeDrawer} />
         </Drawer>
         <Outlet />
