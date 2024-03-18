@@ -61,7 +61,7 @@ function Footer() {
           </IconContext.Provider>
         </svg>
         </a>
-        <a href="https://www.linkedin.com/in/paigehcarroll2113/" target="_blank" className="m-2 rounded icon-link">
+        <a href="https://www.linkedin.com/in/paigehcarroll/" target="_blank" className="m-2 rounded icon-link">
           <SiLinkedin size={iconSize} className="hover-overlay" style={iconStyle.linkedin}/>
         </a>
         <a href="https://github.com/sillytsundere" target="_blank" className="m-2 rounded-circle icon-link">
