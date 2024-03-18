@@ -47,7 +47,7 @@ function Footer() {
   return (
     <footer className="d-flex flex-column align-items-center m-2">
       <section>
-        <a href="https://www.instagram.com/sillytsundere/" className="m-2 icon-link" style={iconStyle.instagram}>
+        <a href="https://www.instagram.com/sillytsundere/" target="_blank" className="m-2 icon-link" style={iconStyle.instagram}>
         <svg height={iconSize} width={iconSize}>
           <defs>
             <linearGradient id="myGradient" gradientTransform="rotate(102)">
@@ -61,10 +61,10 @@ function Footer() {
           </IconContext.Provider>
         </svg>
         </a>
-        <a href="https://www.linkedin.com/in/paigehcarroll2113/" className="m-2 rounded icon-link">
+        <a href="https://www.linkedin.com/in/paigehcarroll2113/" target="_blank" className="m-2 rounded icon-link">
           <SiLinkedin size={iconSize} className="hover-overlay" style={iconStyle.linkedin}/>
         </a>
-        <a href="https://github.com/sillytsundere" className="m-2 rounded-circle icon-link">
+        <a href="https://github.com/sillytsundere" target="_blank" className="m-2 rounded-circle icon-link">
           <SiGithub size={iconSize} className="hover-overlay" style={iconStyle.github}/>
         </a>
       </section>
