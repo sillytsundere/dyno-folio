@@ -12,10 +12,10 @@ export default function About() {
           alt="picture of me"
         />
         <p className="m-3 quicksand-font about-text">
-        Howdy! I'm Paige—a passionate web developer driven by insatiable curiosity and a love for the exhilarating world of software development. My recently acquired Full Stack Web Development certificate serves as a cornerstone, propelling me into the next phase of my educational journey. 
+        Howdy! I'm Paige—a passionate web developer driven by humble curiosity and a love for creating things. Since delving into coding and obtaining my Full Stack Web Development certificate, my hunger for knowledge has surged. As a lifelong learner I relish getting to learn something new and the ever-evolving field of web development continually presents fresh avenues for discovery. 
         <br></br>
         <br></br>
-        I am most comfortable working with JavaScript and its frameworks, and now I'm broadening my skills through courses in Python, AWS, C#, and Java. 
+        I am most comfortable working with HTML, CSS, JavaScript and React. I am currently pursuing further understanding of coding fundamentals by delving further into JavaScript and its many frameworks and libraries. With the ever-evolving nature of web-development I am excited with the prospect that there will always be something new to learn.
         <br></br>
         <br></br>
         Away from the terminal, you’ll catch me creating art, exploring local hiking trails, devouring books and manga, and savoring delicious meals with good friends.

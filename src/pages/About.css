@@ -10,7 +10,7 @@
 }
 
 .about-text {
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .shadows-into-light-regular {
@@ -37,7 +37,10 @@
     font-size: 3em;
   }
   .about-text {
-    font-size: 18px;
+    font-size: 17px;
+  }
+  .image {
+    width: 225px;
   }
 }
 
