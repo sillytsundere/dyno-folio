@@ -12,6 +12,7 @@ export default function Resume() {
                 href="https://docs.google.com/document/d/1PtlxedYoIhz1y00ahsI6c8QKtW9FpetFWf6TEZGKLHo/edit?usp=sharing"
                 className="card-link link"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Technical Resume
               </a>

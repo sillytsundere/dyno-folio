@@ -20,7 +20,7 @@ function Project({
   return (
     <div className="col-12 col-md-6 col-lg-4 my-2">
       <div className="card m-2 h-100 d-flex flex-column">
-        <a href={deployedLink} target="_blank">
+        <a href={deployedLink} target="_blank" rel="noopener noreferrer">
           <img
             src={image}
             className="images card-img-top"
@@ -33,6 +33,8 @@ function Project({
           <p className="card-text">{tech}</p>
           <a
             href={githubLink}
+            target="_blank" 
+            rel="noopener noreferrer"
             className="btn btn-primary"
             style={{
               backgroundColor: "#319D39",
