@@ -8,12 +8,15 @@ import "./App.css";
 import { SlMenu } from "react-icons/sl";
 import { Button } from "react-bootstrap";
 
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import NavBar from "./components/NavBar.jsx";
 import NavBarVert from "./components/NavBarVert.jsx";
 import Footer from "./components/Footer.jsx";
 
 function App() {
+  const location = useLocation();
+  const isResumePage = location.pathname === "/resume";
+
   const [isOpen, setIsOpen] = useState(false);
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);
@@ -51,6 +54,13 @@ function App() {
     };
   }, []);
 
+  if (isResumePage) {
+    return (
+      <>
+      <Outlet />
+      </>
+    );
+  }
   return (
     <>
       <main className="main">
@@ -74,7 +84,7 @@ function App() {
         </Drawer>
         <Outlet />
       </main>
-      <Footer className="footer" />
+      <Footer />
     </>
   );
 }

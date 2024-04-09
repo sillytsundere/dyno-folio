@@ -9,14 +9,20 @@ body {
 }
 
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   justify-content: space-between;
+}
+
+.main {
+  padding: 2em;
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .read-the-docs {
@@ -49,13 +55,6 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-
-.footer {
-  position: absolute;
-  left: 0; right: 0; bottom: 0;
-  width: 100%;
-}
-
 
 @media (max-width: 800px) {
   /* For screens 800px and below */

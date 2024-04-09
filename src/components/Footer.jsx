@@ -45,7 +45,7 @@ function Footer() {
  }, []);
 
   return (
-    <footer className="d-flex flex-column align-items-center m-2">
+    <footer className="footer d-flex flex-column align-items-center m-2">
       <section>
         <a href="https://www.instagram.com/sillytsundere/" target="_blank" rel="noopener noreferrer" className="m-2 icon-link" style={iconStyle.instagram}>
         <svg height={iconSize} width={iconSize}>
