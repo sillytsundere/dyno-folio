@@ -10,10 +10,24 @@ function NavListItem({ page, currentPage, closeDrawer }) {
           className={currentPage === "/" ? "nav-link active" : "nav-link"}
           onClick={() => {
             closeDrawer();
-            console.log("Link clicked");
           }}
         >
           About
+        </Link>
+      </li>
+    );
+  } else if (page === "resume") {
+    return (
+      <li className="nav-item">
+        <Link
+          to="/resume"
+          className={currentPage === "/resume" ? "nav-link active" : "nav-link"}
+          target="_blank"
+          onClick={() => {
+            closeDrawer();
+          }}
+        >
+          Resume
         </Link>
       </li>
     );
@@ -27,7 +41,6 @@ function NavListItem({ page, currentPage, closeDrawer }) {
           }
           onClick={() => {
             closeDrawer();
-            console.log("Link clicked");
           }}
         >
           {page[0].toUpperCase()}
