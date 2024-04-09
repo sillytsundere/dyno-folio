@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import validateEmail from "../utils/helper.js";
 import axios from "axios";
-import './Contact.css'
+import "./Contact.css";
 
 //import for formspree email
 import { useForm, ValidationError } from "@formspree/react";
@@ -83,7 +83,10 @@ export default function Contact() {
       data: inputs,
     })
       .then((r) => {
-        handleServerResponse(true, "Thanks! I look forward to hearing from you!");
+        handleServerResponse(
+          true,
+          "Thanks! I look forward to hearing from you!"
+        );
       })
       .catch((r) => {
         handleServerResponse(false, r.response.data.error);
@@ -91,63 +94,65 @@ export default function Contact() {
   };
 
   return (
-    <div>
-      <h1
-        className="m-2 text-center shadows-into-light-regular contact-title"
+    <div className="container-fluid">
+      <h1 className="shadows-into-light-regular contact-title">Contact Me</h1>
+      <div className="row justify-content-center">
+      <form
+        className="row form quicksand-font col-12 col-sm-10 col-lg-9 justify-content-center"
+        onSubmit={handleOnSubmit}
+        noValidate
       >
-        Contact Me
-      </h1>
-      <div className="row d-flex justify-content-center quicksand-font">
-        <div className="col-12 col-sm-10 col-lg-8">
-        <form className="form" onSubmit={handleOnSubmit} noValidate>
-          <label htmlFor="name">Name:</label>
-          <input
-            id="name"
-            type="text"
-            name="name"
-            onChange={handleOnChange}
-            value={inputs.name}
-            placeholder="Your Name"
-            className={fieldErrors.name ? "error form-control" : "form-control"}
-          />
-          {renderFieldError("name")}
-          <label htmlFor="email">Email:</label>
-          <input
-            id="email"
-            type="email"
-            name="email"
-            onChange={handleOnChange}
-            value={inputs.email}
-            placeholder="Your Email"
-            className={fieldErrors.email ? "error form-control" : "form-control"}
-          />
-          {renderFieldError("email")}
-          <label htmlFor="message">Message:</label>
-          <textarea
-            id="message"
-            name="message"
-            onChange={handleOnChange}
-            value={inputs.message}
-            placeholder="Message"
-            className={fieldErrors.message ? "error form-control" : "form-control"}
-            rows="5"
-          ></textarea>
-          {renderFieldError("message")}
-          <div className="text-center m-2">
-          <button className="btn"
-                  style={{ backgroundColor: "#319D39" }}
-                  type="submit" 
-                  disabled={serverState.submitting}>
+        <label htmlFor="name">Name:</label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          onChange={handleOnChange}
+          value={inputs.name}
+          placeholder="Your Name"
+          className={fieldErrors.name ? "error form-control" : "form-control"}
+        />
+        {renderFieldError("name")}
+        <label htmlFor="email">Email:</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          onChange={handleOnChange}
+          value={inputs.email}
+          placeholder="Your Email"
+          className={fieldErrors.email ? "error form-control" : "form-control"}
+        />
+        {renderFieldError("email")}
+        <label htmlFor="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          onChange={handleOnChange}
+          value={inputs.message}
+          placeholder="Message"
+          className={
+            fieldErrors.message ? "error form-control" : "form-control"
+          }
+          rows="5"
+        ></textarea>
+        {renderFieldError("message")}
+        <div className="text-center m-2">
+          <button
+            className="btn"
+            style={{ backgroundColor: "#319D39" }}
+            type="submit"
+            disabled={serverState.submitting}
+          >
             Submit
           </button>
-          </div>
-          {serverState.status && (
-            <p className={!serverState.status.ok ? "errorMsg" : ""}>
-              {serverState.status.msg}
-            </p>
-          )}
-        </form>
-      </div>
+        </div>
+        {serverState.status && (
+          <p className={!serverState.status.ok ? "errorMsg" : ""}>
+            {serverState.status.msg}
+          </p>
+        )}
+      </form>
       </div>
     </div>
   );

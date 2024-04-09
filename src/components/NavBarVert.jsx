@@ -19,16 +19,19 @@ function NavListItem({ page, currentPage, closeDrawer }) {
   } else if (page === "resume") {
     return (
       <li className="nav-item">
-        <Link
-          to="/resume"
+        <a
+          href="/resume"
           className={currentPage === "/resume" ? "nav-link active" : "nav-link"}
           target="_blank"
-          onClick={() => {
+          rel="noopener noreferrer"
+          onClick={(e) => {
+            e.preventDefault();
             closeDrawer();
+            window.open('/resume', '_blank');
           }}
         >
           Resume
-        </Link>
+        </a>
       </li>
     );
   } else {
@@ -51,7 +54,7 @@ function NavListItem({ page, currentPage, closeDrawer }) {
   }
 }
 
-function NavBar() {
+function NavBar({ closeDrawer }) {
   const pages = ["/", "portfolio", "contact", "resume"];
   const currentPage = useLocation().pathname;
 
@@ -60,7 +63,7 @@ function NavBar() {
       <header className="shadows-into-light-regular drawer-header">Paige</header>
       <ul className="list quicksand-font">
         {pages.map((page) => (
-          <NavListItem key={page} page={page} currentPage={currentPage} />
+          <NavListItem key={page} page={page} currentPage={currentPage} closeDrawer={closeDrawer} />
         ))}
       </ul>
     </nav>

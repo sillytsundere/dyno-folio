@@ -144,7 +144,7 @@ export default function Portfolio() {
   ];
 
   return (
-    <div className="m-2">
+    <div>
       <h1 className="shadows-into-light-regular portfolio-title">
         Portfolio
       </h1>
