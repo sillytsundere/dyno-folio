@@ -6,11 +6,11 @@ export default function About() {
     <div>
       <h1 className="shadows-into-light-regular about-title">A Web Paige</h1>
       <div className="d-flex flex-column flex-md-row align-items-center">
-        <img
+        {/* <img
           src={myPicture}
           className="rounded-circle m-3 center image"
           alt="picture of me"
-        />
+        /> */}
         <p className="m-3 quicksand-font about-text">
         Howdy! I'm Paige—a passionate web developer driven by humble curiosity and a love for creating things. Since delving into coding and obtaining my Full Stack Web Development certificate, my hunger for knowledge has surged. As a lifelong learner I relish getting to learn something new and the ever-evolving field of web development continually presents fresh avenues for discovery. 
         <br></br>
