@@ -83,7 +83,7 @@ export default function Portfolio() {
     },
     {
       image: weather,
-      alt: "",
+      alt: "application displaying 'current' and next five days of weather for Portland at a past date",
       title: "Stellar Weather",
       description:
         "This weather application displays the current forcast for a desired city as well as the future forcast over a 5 day period.",
