@@ -6,6 +6,7 @@ import ajaxFolio from "../assets/ajax-folio.png";
 import jsQuiz from "../assets/js-quiz.png";
 import weather from "../assets/stellar-weather.png";
 import collectConnect from "../assets/collect-connect.jpeg";
+import smartShop from "../assets/collab-lab-shop-app.png"
 import './Portfolio.css';
 
 function Project({
@@ -61,6 +62,15 @@ function Project({
 export default function Portfolio() {
   const projects = [
     {
+      image: smartShop,
+      alt: "homepage of site when logged in displaying user's shopping lists",
+      title: "Smart Shop",
+      description: "A shopping list that learns shopping habits over time, organizing lists by what is most likely to be bought next. Worked remotely with other developers under the guidance of mentors in an agile environment.",
+      tech: "React, JavaScript, NodeJs, Firebase",
+      githubLink: "https://github.com/the-collab-lab/tcl-73-smart-shopping-list",
+      deployedLink: "https://tcl-73-smart-shopping-list.web.app/",
+    },
+    {
       image: collectConnect,
       alt: "homepage of site when logged in displaying feed of collections",
       title: "CollectConnect",
@@ -70,6 +80,16 @@ export default function Portfolio() {
       githubLink: "https://github.com/DanielTBonn/collectors-connect",
       deployedLink:
         "https://boiling-anchorage-11027-d19406c04dfb.herokuapp.com/",
+    },
+    {
+      image: weather,
+      alt: "",
+      title: "Stellar Weather",
+      description:
+        "This weather application displays the current forcast for a desired city as well as the future forcast over a 5 day period.",
+      tech: "HTML, Bootstrap, JavaScript, jQuery, Open Weather API",
+      githubLink: "https://github.com/sillytsundere/my-weather-spot",
+      deployedLink: "https://sillytsundere.github.io/my-weather-spot/",
     },
     {
       image: cosfolio,
@@ -100,16 +120,6 @@ export default function Portfolio() {
       tech: "HTML, CSS, JavaScript, Bootstrap, TailwindCSS, Google Books API, Open Library API",
       githubLink: "https://github.com/sillytsundere/bookquesters",
       deployedLink: "https://sillytsundere.github.io/bookquesters/",
-    },
-    {
-      image: weather,
-      alt: "",
-      title: "Stellar Weather",
-      description:
-        "This weather application displays the current forcast for a desired city as well as the future forcast over a 5 day period.",
-      tech: "HTML, Bootstrap, JavaScript, jQuery, Open Weather API",
-      githubLink: "https://github.com/sillytsundere/my-weather-spot",
-      deployedLink: "https://sillytsundere.github.io/my-weather-spot/",
     },
     {
       image: jsQuiz,
