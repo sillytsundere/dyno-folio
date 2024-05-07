@@ -12,7 +12,7 @@ function NavListItem({ page, currentPage, closeDrawer }) {
             closeDrawer();
           }}
         >
-          About
+          Home
         </Link>
       </li>
     );
@@ -55,7 +55,7 @@ function NavListItem({ page, currentPage, closeDrawer }) {
 }
 
 function NavBar({ closeDrawer }) {
-  const pages = ["/", "portfolio", "contact", "resume"];
+  const pages = ["/", "about", "portfolio", "contact", "resume"];
   const currentPage = useLocation().pathname;
 
   return (

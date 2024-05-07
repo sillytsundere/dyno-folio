@@ -1,0 +1,52 @@
+.about-title {
+    color: #d0f0c0;
+    font-size: 4em;
+    margin: 20px;
+  }
+  
+  .home-image {
+    width: 300px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+  }
+  
+  .about-text {
+    font-size: 20px;
+  }
+  
+  .shadows-into-light-regular {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .rock-3d-regular {
+    font-family: "Rock 3D", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .quicksand-font {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+  }
+  
+  @media (max-width: 800px) {
+    .about-title {
+      font-size: 3em;
+    }
+    .about-text {
+      font-size: 17px;
+    }
+    .home-image {
+      width: 225px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .about-title {
+      font-size: 2.5em;
+    }
+  }
+  

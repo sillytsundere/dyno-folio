@@ -17,38 +17,11 @@ function Footer() {
     }
   }
 
-  const [iconSize, setIconSize] = useState(50);
-
-  useEffect(() => {
-    const updateIconSize = () => {
-      const viewportWidth = window.innerWidth;
-
-      if (viewportWidth <= 600) {
-        setIconSize(32);
-      } else if (viewportWidth <= 800) {
-        setIconSize(50)
-      } else {
-        setIconSize(75)
-      }
-    };
-  
-  // Initial update
-  updateIconSize();
-
-  // Update on window resize
-  window.addEventListener("resize", updateIconSize);
-
-  // Clean up the event listener on component unmount
-  return () => {
-    window.removeEventListener("resize", updateIconSize);
-  };
- }, []);
-
   return (
     <footer className="footer d-flex flex-column align-items-center m-2">
       <section>
-        <a href="https://www.instagram.com/sillytsundere/" target="_blank" rel="noopener noreferrer" className="m-2 icon-link" style={iconStyle.instagram}>
-        <svg height={iconSize} width={iconSize}>
+        <a href="https://www.instagram.com/sillytsundere/" target="_blank" rel="noopener noreferrer" className=" icon-link" style={iconStyle.instagram}>
+        <svg height={32} width={32}>
           <defs>
             <linearGradient id="myGradient" gradientTransform="rotate(102)">
               <stop offset="0%" stopColor="#6228d7" />
@@ -57,18 +30,18 @@ function Footer() {
             </linearGradient>
           </defs>
           <IconContext.Provider value={{ attr: {fill: "url('#myGradient')"}}}>
-            <SiInstagram size={iconSize} className="rounded hover-overlay" />
+            <SiInstagram size={32} className="rounded hover-overlay" />
           </IconContext.Provider>
         </svg>
         </a>
-        <a href="https://www.linkedin.com/in/paigehcarroll/" target="_blank" rel="noopener noreferrer" className="m-2 rounded icon-link">
-          <SiLinkedin size={iconSize} className="hover-overlay" style={iconStyle.linkedin}/>
+        <a href="https://www.linkedin.com/in/paigehcarroll/" target="_blank" rel="noopener noreferrer" className=" rounded icon-link">
+          <SiLinkedin size={32} className="hover-overlay" style={iconStyle.linkedin}/>
         </a>
-        <a href="https://github.com/sillytsundere" target="_blank" rel="noopener noreferrer" className="m-2 rounded-circle icon-link">
-          <SiGithub size={iconSize} className="hover-overlay" style={iconStyle.github}/>
+        <a href="https://github.com/sillytsundere" target="_blank" rel="noopener noreferrer" className=" rounded-circle icon-link">
+          <SiGithub size={32} className="hover-overlay" style={iconStyle.github}/>
         </a>
       </section>
-      <p style={{color: "#32CD32"}}>© 2023 Made by Paige Carroll</p>
+      <p style={{color: "#32CD32"}}>© 2023 made by Paige Carroll</p>
     </footer>
   );
 }

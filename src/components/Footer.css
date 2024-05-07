@@ -1,13 +1,13 @@
 /* Footer.css */
 .footer {
   /* position: absolute; */
-  left: 0; right: 0; bottom: 0;
-  width: 100%;
-  padding-bottom: 32px;
+  bottom: 0;
+  max-width: 100%;
 }
 
 .icon-link {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-inline: 2em;
   }
   
 .icon-link:hover {
