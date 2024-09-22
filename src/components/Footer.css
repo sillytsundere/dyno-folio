@@ -6,11 +6,11 @@
 }
 
 .icon-link {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-inline: 2em;
-  }
-  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-inline: 2em;
+}
+
 .icon-link:hover {
-    transform: translateY(-15px); /* Move up by 10 pixels on hover */
-    box-shadow: 7px 10px 8px rgba(0, 0, 0, 0.7); /* Add a subtle box shadow on hover */
-  }
+  transform: translateY(-15px); /* Move up by 10 pixels on hover */
+  box-shadow: 7px 10px 8px rgba(0, 0, 0, 0.7); /* Add a subtle box shadow on hover */
+}

@@ -99,7 +99,6 @@ export default function Portfolio() {
         "A forum where users can save and share cosplay creations as well as view other users' creations.",
       tech: "HandlebarsJS, Bootstrap, CSS, JavaScript, NodeJS, ExpressJS, MySQL, Sequelize, Heroku",
       githubLink: "https://github.com/sillytsundere/cosfolio",
-      deployedLink: "https://cosfolio-cbc30e9a9851.herokuapp.com/",
     },
     {
       image: techTalk,
@@ -109,7 +108,6 @@ export default function Portfolio() {
         "This web application is a CMS-style blog that allows users to create an account, log in, share posts and view and comment on other user's posts.",
       tech: "HandlebarsJS, Bootstrap, CSS, JavaScript, NodeJS, ExpressJS, MySQL, Sequelize, Heroku",
       githubLink: "https://github.com/sillytsundere/comp-sci-blog",
-      deployedLink: "https://comp-tech-talk-1c5888367981.herokuapp.com/",
     },
     {
       image: bookquesters,

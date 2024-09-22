@@ -27,7 +27,7 @@ function NavListItem({ page, currentPage, closeDrawer }) {
           onClick={(e) => {
             e.preventDefault();
             closeDrawer();
-            window.open('/resume', '_blank');
+            window.open("../assets/Paige-H-Carroll-Resume.pdf", "_blank");
           }}
         >
           Resume
@@ -60,10 +60,17 @@ function NavBar({ closeDrawer }) {
 
   return (
     <nav>
-      <header className="shadows-into-light-regular drawer-header">Paige</header>
+      <header className="shadows-into-light-regular drawer-header">
+        Paige
+      </header>
       <ul className="list quicksand-font">
         {pages.map((page) => (
-          <NavListItem key={page} page={page} currentPage={currentPage} closeDrawer={closeDrawer} />
+          <NavListItem
+            key={page}
+            page={page}
+            currentPage={currentPage}
+            closeDrawer={closeDrawer}
+          />
         ))}
       </ul>
     </nav>
