@@ -19,19 +19,19 @@ function NavListItem({ page, currentPage, closeDrawer }) {
   } else if (page === "resume") {
     return (
       <li className="nav-item">
-        <a
-          href="/resume"
-          className={currentPage === "/resume" ? "nav-link active" : "nav-link"}
+        <Link
+          to="/resume"
+          className={currentPage === `/${page}` ? "nav-link active" : "nav-link"}
           target="_blank"
           rel="noopener noreferrer"
           onClick={(e) => {
-            e.preventDefault();
+            // e.preventDefault();
             closeDrawer();
-            window.open("../assets/Paige-H-Carroll-Resume.pdf", "_blank");
+            // window.open("../assets/Paige-H-Carroll-Resume.pdf", "_blank");
           }}
         >
           Resume
-        </a>
+        </Link>
       </li>
     );
   } else {
