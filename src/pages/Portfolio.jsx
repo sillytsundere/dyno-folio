@@ -78,8 +78,8 @@ export default function Portfolio() {
         "Collector’s connect is a website where collectors can share their various collections and view collections shared by other users.",
       tech: "React, JavaScript, Bootstrap, NodeJS, ExpressJS, MongoDB, Apollo with GraphQL, AWS S3, Heroku",
       githubLink: "https://github.com/DanielTBonn/collectors-connect",
-      deployedLink:
-        "https://boiling-anchorage-11027-d19406c04dfb.herokuapp.com/",
+      /* deployedLink:
+        "https://boiling-anchorage-11027-d19406c04dfb.herokuapp.com/", */
     },
     {
       image: weather,
