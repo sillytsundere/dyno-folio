@@ -6,8 +6,8 @@ import ajaxFolio from "../assets/ajax-folio.png";
 import jsQuiz from "../assets/js-quiz.png";
 import weather from "../assets/stellar-weather.png";
 import collectConnect from "../assets/collect-connect.jpeg";
-import smartShop from "../assets/collab-lab-shop-app.png"
-import './Portfolio.css';
+import smartShop from "../assets/collab-lab-shop-app.png";
+import "./Portfolio.css";
 
 function Project({
   image,
@@ -22,11 +22,7 @@ function Project({
     <div className="col-12 col-md-6 col-lg-4 my-2">
       <div className="card m-2 h-100 d-flex flex-column">
         <a href={deployedLink} target="_blank" rel="noopener noreferrer">
-          <img
-            src={image}
-            className="images card-img-top"
-            alt={alt}
-          />
+          <img src={image} className="images card-img-top" alt={alt} />
         </a>
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
@@ -34,7 +30,7 @@ function Project({
           <p className="card-text">{tech}</p>
           <a
             href={githubLink}
-            target="_blank" 
+            target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary"
             style={{
@@ -65,9 +61,11 @@ export default function Portfolio() {
       image: smartShop,
       alt: "homepage of site when logged in displaying user's shopping lists",
       title: "Smart Shop",
-      description: "A shopping list that learns shopping habits over time, organizing lists by what is most likely to be bought next. Worked remotely with other developers under the guidance of mentors in an agile environment.",
+      description:
+        "A shopping list that learns shopping habits over time, organizing lists by what is most likely to be bought next. Worked remotely with other developers under the guidance of mentors in an agile environment.",
       tech: "React, JavaScript, NodeJs, Firebase",
-      githubLink: "https://github.com/the-collab-lab/tcl-73-smart-shopping-list",
+      githubLink:
+        "https://github.com/the-collab-lab/tcl-73-smart-shopping-list",
       deployedLink: "https://tcl-73-smart-shopping-list.web.app/",
     },
     {
@@ -153,9 +151,7 @@ export default function Portfolio() {
 
   return (
     <div>
-      <h1 className="shadows-into-light-regular portfolio-title">
-        Portfolio
-      </h1>
+      <h1 className="shadows-into-light-regular portfolio-title">Portfolio</h1>
       <div className="d-flex flex-wrap quicksand-font">
         {projects.map((project) => (
           <Project

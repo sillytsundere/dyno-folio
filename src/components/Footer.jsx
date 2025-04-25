@@ -20,7 +20,7 @@ function Footer() {
   return (
     <footer className="footer d-flex flex-column align-items-center m-2">
       <section>
-        <a href="https://www.instagram.com/sillytsundere/" target="_blank" rel="noopener noreferrer" className=" icon-link" style={iconStyle.instagram}>
+        <a href="https://www.instagram.com/parchmentpaiges/" target="_blank" rel="noopener noreferrer" className=" icon-link" style={iconStyle.instagram}>
         <svg height={32} width={32}>
           <defs>
             <linearGradient id="myGradient" gradientTransform="rotate(102)">
